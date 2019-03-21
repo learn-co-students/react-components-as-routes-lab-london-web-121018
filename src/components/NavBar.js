@@ -3,8 +3,22 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
-      {/*{code here}*/}
+    <div className="navbar">
+      <NavLink
+        to="/"
+        exact>Home</NavLink>
+      &ensp;
+      <NavLink
+        to="/movies"
+        exact>Movies</NavLink>
+      &ensp;
+      <NavLink
+        to="/directors"
+        exact>Directors</NavLink>
+      &ensp;
+      <NavLink
+        to="/actors"
+        exact>Actors</NavLink>
     </div>
   );
 };
